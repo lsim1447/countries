@@ -22,10 +22,24 @@ npx prisma migrate dev --name init
 DATABASE_URL="postgresql://user:password@localhost:5432/country_explorer"
 ```
 
+Note: You may need to update the DATABASE_URL to point to your local DB. Once it is done, you'll have to execute the following commands:
+
+```bash
+npx prisma migrate dev --name init
+npx prisma generate
+
+```
+
 #### Start Dev Server
 
 ```bash
 npx ts-node-dev src/index.ts
+```
+
+OR
+
+```bash
+npm run start
 ```
 
 #### Endpoints

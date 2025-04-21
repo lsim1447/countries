@@ -10,8 +10,8 @@ datasource db {
 model Country {
   id        Int     @id @default(autoincrement())
   name      String
-  capital   String
-  region    String
+  capital   String?
+  region    String?
   population Int
-  flag      String
+  flag      String?
 }

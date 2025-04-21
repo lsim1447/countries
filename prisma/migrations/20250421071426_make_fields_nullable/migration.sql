@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE "Country" ALTER COLUMN "capital" DROP NOT NULL,
+ALTER COLUMN "region" DROP NOT NULL,
+ALTER COLUMN "flag" DROP NOT NULL;
